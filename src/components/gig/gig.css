@@ -1,0 +1,143 @@
+.gig__card {
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.gig__card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gig__card-image {
+  font-size: 0;
+}
+
+.gig__card-image img {
+  width: 350px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gig__card_user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 4px solid rgb(255, 255, 255);
+  position: absolute;
+  top: calc(45% - 27px);
+  left: 5%;
+}
+
+.gig__card_user-info {
+  padding: 1rem;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.gig__card_user-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gig__card_user-info-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d2d3db;
+  position: absolute;
+  left: 0;
+  top: calc(25% + 5px);
+}
+
+.gig__card_user-names h3 {
+  color: #1dbf73;
+  font-size: 1rem;
+}
+
+.gig__card_user-names h6 {
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+}
+
+.gig__card_user-rating span {
+  color: #f9bb00;
+  font-weight: 700;
+}
+
+.gig__card_user-rating small {
+  color: #d2d3db;
+}
+
+.gig__card_user-info p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+
+.gig__card_user-info p:hover {
+  color: #1dbf73;
+}
+
+.gig__card_user-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gig__card_user-pricing small {
+  font-size: 0.75rem;
+  color: rgb(26, 26, 26);
+}
+
+.gig__card_user-pricing h2 {
+  font-size: 1.35rem;
+  color: #1dbf73;
+}
+
+.gig__card_user-pricing::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d2d3db;
+  position: absolute;
+  left: 0;
+  bottom: calc(30% + 5px);
+}
+
+.gig__card_user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gig__card_user-icon .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .gig__card-image img {
+    min-width: 330px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .gig__card-image img {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,156 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-lists {
+  margin-left: 2.5rem;
+  display: flex;
+}
+
+.nav-lists li {
+  margin: 0rem 1.5rem 0;
+}
+
+.nav-lists li a {
+  font-size: 1rem;
+  color: rgb(26, 26, 26);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-lists li a:hover {
+  color: #1dbf73;
+}
+
+.navbar__buttons ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__buttons ul li {
+  margin-left: 1.5rem;
+}
+
+.navbar__buttons ul li a {
+  font-size: 1rem;
+  color: rgb(26, 26, 26);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar__buttons ul li a:hover {
+  color: #1dbf73;
+}
+
+.navbar__buttons ul .btn {
+  color: #fff;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.navbar__menu_container {
+  border-radius: 3px;
+  background-color: #1dbf73;
+  min-width: 200px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.3);
+}
+
+.navbar__menu_container-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__menu_container-links .nav-lists {
+  flex-direction: column;
+  margin: 0;
+}
+
+.navbar__menu_container-links .nav-lists li {
+  margin: 0 0 0.5rem 0;
+}
+
+.navbar__menu_container-links .nav-lists li a {
+  color: #fff;
+}
+.navbar__menu_container-links .nav-lists li a:hover {
+  color: rgb(26, 26, 26);
+}
+
+.nav__menu_container-links-sign .navbar__buttons ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav__menu_container-links-sign .navbar__buttons ul li {
+  margin: 0.5rem 0;
+}
+
+.nav__menu_container-links-sign .navbar__buttons .nav__menu-btn {
+  display: block;
+  min-width: 165px;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 50px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.nav__menu_container-links-sign .navbar__buttons .nav__menu-btn:hover {
+  border-color: transparent;
+  background-color: #fff;
+  color: #1dbf73;
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar {
+    padding: 2.5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar__container .nav-lists,
+  .navbar__container .navbar__buttons {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    padding: 2rem;
+  }
+}
